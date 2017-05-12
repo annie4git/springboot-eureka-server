@@ -1,0 +1,9 @@
+---
+applications:
+  - name: predix-springboot-eureka-server1
+    buildpack: java_buildpack
+    path: target/springboot-eureka-server-0.0.1-SNAPSHOT.jar
+    memory: 512M
+    timeout : 180
+env:
+   SPRING_PROFILES_ACTIVE : cloud
