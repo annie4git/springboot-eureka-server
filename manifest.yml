@@ -1,8 +1,7 @@
 ---
 applications:
   - name: predix-springboot-eureka-server1
-    buildpack: java_buildpack
+    buildpack: https://github.com/cloudfoundry/java-buildpack.git
     path: target/springboot-eureka-server-0.0.1-SNAPSHOT.jar
-    memory: 512M
-    host: predix-springboot-eureka-registry
-    timeout: 180
+    memory: 1024M
+    timeout: 120 
